@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(97, 97, 240);
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    color: whitesmoke;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 40px 30px;
+    font-size: 15px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    padding: 35px 0;
+    font-size: 2em;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: white;
+}
+.sidebar nav li a:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: lavender;
+}
+
+.container {
+    display: flex;
+}
+
+.info {
+    width: 80vw;
+    height: 58vh;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.devInfo {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Crimson Text', serif;
+    padding-left: 5px;
+}
+
+.devPic img {
+    height: 58vh;
+}
+
+.hello {
+    font-size: 2.5em;
+    color: rgb(26, 1, 32);
+}
+
+.name {
+    font-size: 3em;
+}
+
+.about {
+    font-size: 2em;
+    color: rgb(77, 75, 75);
+}
+
+.buttons {
+    margin-top: 2.2em;
+    font-size: 8px;
+}
+
+.buttons button {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    color: dodgerblue;
+    background-color: whitesmoke;
+}
+
+.contactform {
+    font-family: 'Crimson Text', serif;
+    padding: 100px 230px;
+}
+
+.contactform h2 {
+    font-family: 'Fira Sans', sans-serif;
+    padding-bottom: 20px;
+}
+
+.contactform form div {
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    width: 25vw;
+    border-radius: 4px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 13px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+.btn button{
+    color: white;
+    background-color: dodgerblue;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 7px 10px;
+    border-radius: 18px;
+    margin: 20px 850px 0 150px;
+}
+.btn button:hover{
+    color: dodgerblue;
+    background-color: white;
+}
+
+.intro{
+    background-color: lavender;
+    color: black;
+    font-family: 'Crimson Text', serif;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    padding: 200px 80px 0 80px;
+}
+.intro p{
+    padding-bottom: 7px;
+}
+.intro img{
+    padding-top: 50px;
+    height: 150px;
+    width: 250px;
+}
+
+.project{
+    text-align: center;
+    color: rgb(54, 0, 54);
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 250px;
+}
+.certificate{
+    text-align: center;
+    color: rgb(54, 0, 54);
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 250px;
+}
+
+@media (max-width: 1100px){
+/*    .sidebar{
+        transform: translate(-400px, 0px);
+        position: absolute;
+    } */
+    .main{
+        width: 100vw;
+    }
+    .devPic{
+        display: none;
+    }
+    .contactform{
+        padding: 40px 20px;
+    }
+    .btn button{
+        margin: 10px 150px 0 110px;
+    }
+    .contactform form div input{
+        width: 70vw;
+    }
+    .intro{
+        font-size: 13px;
+        padding: 100px 30px;
+    }
+    .intro img{
+        height: 100px;
+        width: 140px;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
+    .buttons{
+        font-size: 5px;
+    }
+    .sidebar nav{
+        font-size: 10px;
+    }
+    .hamberger img.cross{
+        margin-left: 110px;
+    }
+}
+
+.sidebarGo{
+    transform: translate(-400px, 0px);
+    position: absolute;
+}
+
+
+.hamberger{
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.cross{
+    margin-left: 160px;
+}
